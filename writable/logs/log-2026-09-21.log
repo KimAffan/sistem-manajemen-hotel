@@ -1,0 +1,673 @@
+ERROR - 2026-09-21 04:10:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\hotel-management-system\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\hotel-management-system\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\hotel-management-system\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\laragon\www\hotel-management-system\vendor\codeigniter4\shield\src\Commands\Setup.php(430): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\laragon\www\hotel-management-system\vendor\codeigniter4\shield\src\Commands\Setup.php(97): CodeIgniter\Shield\Commands\Setup->runMigrations()
+#12 C:\laragon\www\hotel-management-system\vendor\codeigniter4\shield\src\Commands\Setup.php(82): CodeIgniter\Shield\Commands\Setup->publishConfig()
+#13 C:\laragon\www\hotel-management-system\system\CLI\Commands.php(72): CodeIgniter\Shield\Commands\Setup->run(Array)
+#14 C:\laragon\www\hotel-management-system\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('shield:setup', Array)
+#15 C:\laragon\www\hotel-management-system\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#16 C:\laragon\www\hotel-management-system\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#17 C:\laragon\www\hotel-management-system\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#18 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\hotel-management-system\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\hotel-management-system\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\laragon\www\hotel-management-system\vendor\codeigniter4\shield\src\Commands\Setup.php(430): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\laragon\www\hotel-management-system\vendor\codeigniter4\shield\src\Commands\Setup.php(97): CodeIgniter\Shield\Commands\Setup->runMigrations()
+#11 C:\laragon\www\hotel-management-system\vendor\codeigniter4\shield\src\Commands\Setup.php(82): CodeIgniter\Shield\Commands\Setup->publishConfig()
+#12 C:\laragon\www\hotel-management-system\system\CLI\Commands.php(72): CodeIgniter\Shield\Commands\Setup->run(Array)
+#13 C:\laragon\www\hotel-management-system\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('shield:setup', Array)
+#14 C:\laragon\www\hotel-management-system\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#15 C:\laragon\www\hotel-management-system\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#16 C:\laragon\www\hotel-management-system\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#17 {main}
+ERROR - 2026-09-21 04:12:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\hotel-management-system\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\hotel-management-system\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\hotel-management-system\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\laragon\www\hotel-management-system\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\laragon\www\hotel-management-system\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\laragon\www\hotel-management-system\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 C:\laragon\www\hotel-management-system\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\laragon\www\hotel-management-system\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\hotel-management-system\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\hotel-management-system\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\hotel-management-system\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\hotel-management-system\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\laragon\www\hotel-management-system\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\laragon\www\hotel-management-system\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\laragon\www\hotel-management-system\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\laragon\www\hotel-management-system\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 C:\laragon\www\hotel-management-system\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\laragon\www\hotel-management-system\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2026-09-21 05:56:42 --> ErrorException: Attempt to read property "username" on null
+[Method: GET, Route: login]
+in APPPATH\Views\layouts\header.php on line 15.
+ 1 APPPATH\Views\layouts\header.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\header.php', 15)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\header.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(489): CodeIgniter\View\View->render('layouts/header', null, true)
+ 5 APPPATH\Views\layouts\main.php(71): CodeIgniter\View\View->include('layouts/header')
+ 6 SYSTEMPATH\View\View.php(240): include('C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\main.php')
+ 7 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/main', [], true)
+ 9 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('\\App\\Views\\auth\\login', [], true)
+10 VENDORPATH\codeigniter4\shield\src\Traits\Viewable.php(25): view('\\App\\Views\\auth\\login', [], [])
+11 VENDORPATH\codeigniter4\shield\src\Controllers\LoginController.php(45): CodeIgniter\Shield\Controllers\LoginController->view('\\App\\Views\\auth\\login')
+12 SYSTEMPATH\CodeIgniter.php(974): CodeIgniter\Shield\Controllers\LoginController->loginView()
+13 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+14 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 06:06:18 --> ErrorException: Attempt to read property "username" on null
+[Method: GET, Route: login]
+in APPPATH\Views\layouts\header.php on line 15.
+ 1 APPPATH\Views\layouts\header.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\header.php', 15)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\header.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(489): CodeIgniter\View\View->render('layouts/header', null, true)
+ 5 APPPATH\Views\layouts\main.php(71): CodeIgniter\View\View->include('layouts/header')
+ 6 SYSTEMPATH\View\View.php(240): include('C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\main.php')
+ 7 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/main', [], true)
+ 9 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('\\App\\Views\\auth\\login', [], true)
+10 VENDORPATH\codeigniter4\shield\src\Traits\Viewable.php(25): view('\\App\\Views\\auth\\login', [], [])
+11 VENDORPATH\codeigniter4\shield\src\Controllers\LoginController.php(45): CodeIgniter\Shield\Controllers\LoginController->view('\\App\\Views\\auth\\login')
+12 SYSTEMPATH\CodeIgniter.php(974): CodeIgniter\Shield\Controllers\LoginController->loginView()
+13 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+14 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 06:06:38 --> ErrorException: Attempt to read property "username" on null
+[Method: GET, Route: login]
+in APPPATH\Views\layouts\header.php on line 15.
+ 1 APPPATH\Views\layouts\header.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on null', 'C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\header.php', 15)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\header.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(489): CodeIgniter\View\View->render('layouts/header', null, true)
+ 5 APPPATH\Views\layouts\main.php(71): CodeIgniter\View\View->include('layouts/header')
+ 6 SYSTEMPATH\View\View.php(240): include('C:\\laragon\\www\\hotel-management-system\\app\\Views\\layouts\\main.php')
+ 7 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/main', [], true)
+ 9 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('\\App\\Views\\auth\\login', [], true)
+10 VENDORPATH\codeigniter4\shield\src\Traits\Viewable.php(25): view('\\App\\Views\\auth\\login', [], [])
+11 VENDORPATH\codeigniter4\shield\src\Controllers\LoginController.php(45): CodeIgniter\Shield\Controllers\LoginController->view('\\App\\Views\\auth\\login')
+12 SYSTEMPATH\CodeIgniter.php(974): CodeIgniter\Shield\Controllers\LoginController->loginView()
+13 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\Shield\Controllers\LoginController))
+14 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 07:07:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "room_types/index.php"
+[Method: GET, Route: room-types]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('room_types/index.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('room_types/index', [], true)
+ 3 APPPATH\Controllers\RoomType.php(26): view('room_types/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\RoomType->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomType))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 07:07:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "room_types/index.php"
+[Method: GET, Route: room-types]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('room_types/index.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('room_types/index', [], true)
+ 3 APPPATH\Controllers\RoomType.php(26): view('room_types/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\RoomType->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RoomType))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 07:26:20 --> Error: Class "App\Models\RoomModel" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 07:40:11 --> Error: Call to undefined function status_badge()
+[Method: GET, Route: rooms]
+in APPPATH\Views\rooms\index.php on line 41.
+ 1 SYSTEMPATH\View\View.php(240): include()
+ 2 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('rooms/index', [], true)
+ 4 APPPATH\Controllers\Room.php(34): view('rooms/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Room->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Room))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 08:06:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "guests/index.php"
+[Method: GET, Route: guests]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('guests/index.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('guests/index', [], true)
+ 3 APPPATH\Controllers\Guest.php(20): view('guests/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Guest->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guest))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+ERROR - 2026-09-21 09:56:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (1, 3, 500000, '2026-09-21 09:56:08', '2026-09-21 09:56:08')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (1, 3, 500000, \'2026-09-21 09:56:08\', \'2026-09-21 09:56:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (1, 3, 500000, \'2026-09-21 09:56:08\', \'2026-09-21 09:56:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (1, 3, 500000, \'2026-09-21 09:56:08\', \'2026-09-21 09:56:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (:reservation_id:, :room_id:, :price_per_night:, :created_at:, ::)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Reservation.php(123): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Reservation->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservation))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 09:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-21 10:00:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (2, 3, 500000, '2026-09-21 10:00:17', '2026-09-21 10:00:17')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (2, 3, 500000, \'2026-09-21 10:00:17\', \'2026-09-21 10:00:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (2, 3, 500000, \'2026-09-21 10:00:17\', \'2026-09-21 10:00:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (2, 3, 500000, \'2026-09-21 10:00:17\', \'2026-09-21 10:00:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (:reservation_id:, :room_id:, :price_per_night:, :created_at:, ::)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Reservation.php(123): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Reservation->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservation))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 10:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-21 10:02:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (3, 3, 500000, '2026-09-21 10:02:19', '2026-09-21 10:02:19')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (3, 3, 500000, \'2026-09-21 10:02:19\', \'2026-09-21 10:02:19\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (3, 3, 500000, \'2026-09-21 10:02:19\', \'2026-09-21 10:02:19\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (3, 3, 500000, \'2026-09-21 10:02:19\', \'2026-09-21 10:02:19\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (:reservation_id:, :room_id:, :price_per_night:, :created_at:, ::)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Reservation.php(123): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Reservation->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservation))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 10:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-21 10:09:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (4, 2, 350000, '2026-09-21 10:09:39', '2026-09-21 10:09:39')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (4, 2, 350000, \'2026-09-21 10:09:39\', \'2026-09-21 10:09:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (4, 2, 350000, \'2026-09-21 10:09:39\', \'2026-09-21 10:09:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (4, 2, 350000, \'2026-09-21 10:09:39\', \'2026-09-21 10:09:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `reservation_rooms` (`reservation_id`, `room_id`, `price_per_night`, `created_at`, ) VALUES (:reservation_id:, :room_id:, :price_per_night:, :created_at:, ::)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Reservation.php(123): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Reservation->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservation))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 10:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-21 10:14:28 --> Error: Class "App\Models\ReservationModel" not found
+[Method: GET, Route: reservations]
+in APPPATH\Controllers\Reservation.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(944): App\Controllers\Reservation->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(511): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 10:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 10:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 12:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-21 12:55:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN :g.group:
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC', [...], false)
+ 5 APPPATH\Controllers\Housekeeping.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Housekeeping->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Housekeeping))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 12:55:46 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`' at line 1
+[Method: GET, Route: housekeeping]
+in SYSTEMPATH\Database\BaseConnection.php on line 863.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN :g.group:
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC', [...], false)
+ 2 APPPATH\Controllers\Housekeeping.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Housekeeping->index()
+ 4 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Housekeeping))
+ 5 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 12:55:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN :g.group:
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC', [...], false)
+ 4 APPPATH\Controllers\Housekeeping.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Housekeeping->index()
+ 6 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Housekeeping))
+ 7 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 12:55:46 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN (\'housekeeping\',\'admin\',\'superadmin\',\'manager\')
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1659): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id`, `u`.`username`, GROUP_CONCAT(g.group) AS groups
+FROM `users` `u`
+LEFT JOIN `auth_groups_users` `g` ON `g`.`user_id` = `u`.`id`
+WHERE `g`.`group` IN :g.group:
+GROUP BY `u`.`id`
+ORDER BY `u`.`username` ASC', [...], false)
+ 5 APPPATH\Controllers\Housekeeping.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Housekeeping->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Housekeeping))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 12:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:13:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-21 13:16:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "items/index.php"
+[Method: GET, Route: items]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('items/index.php')
+ 2 SYSTEMPATH\Common.php(1268): CodeIgniter\View\View->render('items/index', [], true)
+ 3 APPPATH\Controllers\Item.php(32): view('items/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Item->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 13:17:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-21 13:23:00 --> CodeIgniter\Exceptions\LogicException: No validation rules for the placeholder: "id". You must set the validation rules for the field. See <https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders>.
+[Method: POST, Route: items/update/2]
+in SYSTEMPATH\Validation\Validation.php on line 812.
+ 1 SYSTEMPATH\Validation\Validation.php(155): CodeIgniter\Validation\Validation->fillPlaceholders([...], [...])
+ 2 SYSTEMPATH\BaseModel.php(1615): CodeIgniter\Validation\Validation->run([...], null, null)
+ 3 SYSTEMPATH\BaseModel.php(1046): CodeIgniter\BaseModel->validate([...])
+ 4 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [...])
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->update('2', [...])
+ 6 APPPATH\Controllers\Item.php(83): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Item->update('2')
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Item))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 13:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-09-21 13:38:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (1, 1, 10, 0, '2026-09-21 13:38:59', '2026-09-21 13:38:59')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (1, 1, 10, 0, \'2026-09-21 13:38:59\', \'2026-09-21 13:38:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (1, 1, 10, 0, \'2026-09-21 13:38:59\', \'2026-09-21 13:38:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (1, 1, 10, 0, \'2026-09-21 13:38:59\', \'2026-09-21 13:38:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (:sr_id:, :item_id:, :quantity_requested:, :quantity_approved:, :created_at:, ::)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Purchasing.php(83): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Purchasing->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+ERROR - 2026-09-21 13:38:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES (1, 2, 10, 0, '2026-09-21 13:38:59', '2026-09-21 13:38:59')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (1, 2, 10, 0, \'2026-09-21 13:38:59\', \'2026-09-21 13:38:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(908): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (1, 2, 10, 0, \'2026-09-21 13:38:59\', \'2026-09-21 13:38:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(825): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (1, 2, 10, 0, \'2026-09-21 13:38:59\', \'2026-09-21 13:38:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2355): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sr_details` (`sr_id`, `item_id`, `quantity_requested`, `quantity_approved`, `created_at`, ) VALUES (:sr_id:, :item_id:, :quantity_requested:, :quantity_approved:, :created_at:, ::)', [...], false)
+ 5 SYSTEMPATH\Model.php(357): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(899): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(670): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Purchasing.php(83): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Purchasing->store()
+10 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+11 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 13:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-21 13:42:54 --> Error: Undefined constant "App\Controllers\this"
+[Method: POST, Route: purchasing/store]
+in APPPATH\Controllers\Purchasing.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Purchasing->store()
+ 2 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+ 3 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 13:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-21 13:45:26 --> ErrorException: Undefined variable $srId
+[Method: POST, Route: purchasing/store]
+in APPPATH\Controllers\Purchasing.php on line 71.
+ 1 APPPATH\Controllers\Purchasing.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $srId', 'C:\\laragon\\www\\hotel-management-system\\app\\Controllers\\Purchasing.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Purchasing->store()
+ 3 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Purchasing))
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 13:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 13:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-09-21 14:25:06 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: reports]
+in VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php on line 742.
+ 1 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\laragon\\www\\hotel-management-system\\vendor\\codeigniter4\\shield\\src\\Authentication\\Authenticators\\Session.php', 742)
+ 2 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(760): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 3 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(422): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+ 4 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(406): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+ 5 VENDORPATH\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+ 6 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('reports', 'before')
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+CRITICAL - 2026-09-21 14:25:37 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: items]
+in VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php on line 742.
+ 1 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(742): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', 'C:\\laragon\\www\\hotel-management-system\\vendor\\codeigniter4\\shield\\src\\Authentication\\Authenticators\\Session.php', 742)
+ 2 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(760): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 3 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(422): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+ 4 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(406): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+ 5 VENDORPATH\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+ 6 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('items', 'before')
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\hotel-management-system\\public\\index.php')
+DEBUG - 2026-09-21 14:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-09-21 14:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
